@@ -1,0 +1,48 @@
+ <
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org" 
+	            xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+		<link rel="stylesheet"  href="webjars/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script type="text/javascript" src="webjars/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript"
+			src="webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+	
+		<header class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+						<!-- Brand -->
+						<a class="navbar-brand" href="/">Product Service</a>
+	
+						<!-- Toggler/collapsibe Button -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#collapsibleNavbar">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+	
+						<!-- Navbar links -->
+						<div class="collapse navbar-collapse" id="collapsibleNavbar">
+							<ul class="navbar-nav">
+								<li class="nav-item"><a class="nav-link" href="/products">Produits</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+								<li class="nav-item dropdown ml-auto">
+									<a class="nav-link dropdown-toggle" href="#" id="navbardrop">Link</a>
+									<div class="dropdown-menu">
+										<a class="dorpdown-item" href="#"> Link 11</a>
+										<a class="dorpdown-item" href="#" > Link 12</a>
+										<a class="dorpdown-item" href="#"> Link 13</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div layout:fragment="content" ></div>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org" 
+	            xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	            layout:decorator="template"
+	            >
+	<head>
+		<meta charset="UTF-8" />
+		<title> Product index </title>	
+	</head>
+	<body>
+	
+	
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1>Bienvenue sur mon merveilleux</h1>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+package com.camaratek.productsapp.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.camaratek.productsapp.repositories.ProductRepository;
+
+@Controller
+public class ProductController {
+	
+	@Autowired
+	private ProductRepository productRepository;
+
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8" />
+		<title> Product index </title>	
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="p:${products}">
+					<td th:text="${p.id}" ></td>
+					<td th:text="${p.name}" ></td>
+					<td th:text="${p.price}" ></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

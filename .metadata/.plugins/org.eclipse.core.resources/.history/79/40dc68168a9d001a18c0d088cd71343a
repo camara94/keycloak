@@ -1,0 +1,5 @@
+package com.camaratek.productsapp.repositories;
+
+public class ProductRepository {
+
+}

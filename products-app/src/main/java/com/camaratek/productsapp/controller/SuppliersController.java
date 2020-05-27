@@ -28,11 +28,11 @@ public class SuppliersController {
     public String suppliers(String name, Model model) {
         ResponseEntity<PagedModel<Supplier>>
                 respose = keycloakRestTemplate.exchange(
-                "http://localhost:8082/suppliers",
-                HttpMethod.GET,
-                null,
-                new ParameterizedTypeReference<PagedModel<Supplier>>() {
-                });
+	                "http://localhost:8083/suppliers",
+	                HttpMethod.GET,
+	                null,
+	                new ParameterizedTypeReference<PagedModel<Supplier>>() {}
+	            );
 
         model.addAttribute("suppliers", respose.getBody().getContent());
 
@@ -41,7 +41,7 @@ public class SuppliersController {
 
     @ExceptionHandler(Exception.class)
     public String exceptionHandler() {
-        return "Errors";
+        return "errors";
     }
 
 }

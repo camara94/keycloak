@@ -1,9 +1,5 @@
 <!doctype html>
-<html
-        xmlns:th="http://www.thymeleaf.org"
-        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-        layout:decorator="template"
->
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<main layout:fragment="content"></main>
-
+<h1>Hello 4ss</h1>
+<span th:text="'Helloo, ' + ${name}"></span>
 </body>
 </html>

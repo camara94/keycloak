@@ -1,5 +1,6 @@
 package com.camaratek.productsapp.repositories;
 
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.camaratek.productsapp.model.Product;

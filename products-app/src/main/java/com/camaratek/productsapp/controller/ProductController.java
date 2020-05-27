@@ -24,12 +24,17 @@ public class ProductController {
 	        return "index";
 	    }
 
+	    @GetMapping("/voir")
+	    public String voir() {
+	        return "voir";
+	    }
+
 
 	    @GetMapping("/produits")
-	    public String products(Model model)//(@RequestParam(name="name", required=false, defaultValue="amar") String name, Model model) {
-	    {   // model.addAttribute("name", name);
+	    public String products(@RequestParam(name="name", required=false, defaultValue="amar") String name, Model model) {
+	    	model.addAttribute("name", name);
 	        model.addAttribute("products", productRepository.findAll());
-
+	        System.out.println("nom est: " + name);
 	        return "products";
 	    }
 

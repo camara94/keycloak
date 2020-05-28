@@ -8,10 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.rest.core.annotation.RestResource;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.camaratek.supplier.supplier.model.Supplier;
 import com.camaratek.supplier.supplier.repositories.SupplierRepository;
-
+@CrossOrigin("*")
 @SpringBootApplication
 public class SupplierApplication {
 

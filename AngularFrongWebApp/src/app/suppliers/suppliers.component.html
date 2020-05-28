@@ -1,0 +1,33 @@
+<div class="container mt-10" *ngIf="errorMessage">
+  <div class="row">
+    <div class="col-12 text-danger">
+      <h1 class="m-20">{{ errorMessage }}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-10" *ngIf="!errorMessage">
+  <div class="row">
+    <div class="col-12">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="suppliers">
+            <tr *ngFor="let supplier of suppliers._embedded.suppliers; let i=index">
+              <td> {{ supplier.id }} </td>
+              <td> {{ supplier.name }} </td>
+              <td> {{ supplier.email }} </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>

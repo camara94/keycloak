@@ -24,6 +24,6 @@ export class SuppliersService {
       .set('content-type', 'application/json')
       .set('Access-Control-Allow-Origin', '*')
       .set('Authorization', 'Bearer' + this.securityService.keycloakInstance.token);*/
-    return this.httpClient.get('http://localhost:8083/suppliers', {headers: new HttpHeaders({ Authorization: 'Bearer ' + this.securityService.keycloakInstance.token }) });
+    return this.httpClient.get('http://localhost:8083/suppliers');
   }
 }
